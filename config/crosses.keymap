@@ -57,11 +57,11 @@
         navigation_layer {
             display-name = "Navigation";
             bindings = <
-&kp F1        &kp F2      &kp F3      &kp F4       &kp F5          &kp F6      &kp F7      &kp F8         &kp F9     &kp F10    &kp F11        &kp F12
-&kp K_REDO    &kp K_FIND  &kp N2      &kp N3       &kp N4          &kp N5      &kp C_MENU  &kp PAGE_DOWN  &kp ENTER  &kp INS    &kp PAGE_UP    &trans
-&kp K_SELECT  &kp K_STOP  &kp K_COPY  &kp LA(TAB)  &kp K_PASTE     &kp K_CUT   &kp LEFT    &kp DOWN       &kp UP     &kp RIGHT  &kp BACKSPACE  &kp DEL
-&kp K_UNDO    &to 0       &kp LC(A)   &kp TAB      &kp K_PREVIOUS  &kp K_NEXT  &trans      &trans         &trans     &trans     &to 2          &trans
-                                      &lt 3 LGUI   &trans          &kp SPACE   &kp RET     &trans         &kp RALT
+&trans      &kp F1            &kp F2       &kp F3      &kp F4           &kp F5       &kp F6      &kp F7              &kp F8     &kp F9               &kp F10        &trans
+&kp K_REDO  &kp K_FIND        &kp LC(W)    &kp LC(T)   &kp LC(LS(TAB))  &kp LC(TAB)  &kp C_MENU  &kp PAGE_DOWN       &kp ENTER  &kp INS              &kp PAGE_UP    &trans
+&kp K_UNDO  &kp LA(LS(TAB))   &kp LA(TAB)  &kp K_COPY  &kp K_PASTE      &kp K_CUT    &kp LEFT    &kp DOWN            &kp UP     &kp RIGHT            &kp BACKSPACE  &kp DEL
+&trans      &lt 0 LEFT_SHIFT  &kp LC(A)    &kp TAB     &kp K_PREVIOUS   &kp K_NEXT   &kp HOME    &kp RC(LEFT_ARROW)  &kp DEL    &kp RC(RIGHT_ARROW)  &lt 2 END      &trans
+                                           &trans      &kp ESCAPE       &trans       &trans      &kp ESCAPE          &trans
             >;
         };
 
