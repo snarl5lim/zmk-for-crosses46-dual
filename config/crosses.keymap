@@ -4,6 +4,34 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    behaviors {
+        // Define the behavior
+        bspc_del: backspace_delete {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE_DELETE";
+            #binding-cells = <0>;
+            // Normal binding, Modified binding
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            // Modifiers that trigger the morph
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            // (Optional) Remove shift if you want only DELETE, not SHIFT+DELETE
+            // masked_mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+        default_layer {
+            bindings = <
+                // Use the custom behavior in your keymap
+                &bspc_del
+            >;
+        };
+    };
+};
+
+
+/ {
     chosen { zmk,physical-layout = &gggw_crosses_54_layout; };
 
     keymap {
@@ -13,7 +41,7 @@
             display-name = "Base";
             bindings = <
 &kp MINUS  &kp N1  &kp N2          &kp N3          &kp N4       &kp N5     &kp N6   &kp N7       &kp N8               &kp N9        &kp N0    &kp EQUAL
-&kp TAB    &kp Q   &kp W           &kp E           &kp R        &kp T      &kp Y    &kp U        &kp I                &kp O         &kp P     &kp BSPC
+&kp TAB    &kp Q   &kp W           &kp E           &kp R        &kp T      &kp Y    &kp U        &kp I                &kp O         &kp P     &bspc_del
 &kp LCTRL  &kp A   &kp S           &kp D           &kp F        &kp G      &kp H    &kp J        &kp K                &kp L         &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &mt LEFT_WIN X  &mt LEFT_ALT C  &mt LCTRL V  &kp B      &kp N    &mt RCTRL M  &mt RIGHT_ALT COMMA  &mt RWIN DOT  &kp FSLH  &kp ESC
                                    &lt 3 LGUI      &kp SPACE    &kp SPACE  &kp RET  &kp SPACE    &kp RALT
