@@ -54,19 +54,19 @@
             >;
         };
 
-        lower_layer {
-            display-name = "Lower";
+        navigation_layer {
+            display-name = "Navigation";
             bindings = <
-&kp TILDE   &kp N1        &kp N2        &kp N3        &kp N4        &kp N5        &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp GRAVE
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5        &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans        &trans    &trans    &trans    &trans     &trans  &trans
-                                        &lt 3 LGUI    &trans        &kp SPACE     &kp RET   &trans    &kp RALT
+&kp F1        &kp F2      &kp F3      &kp F4       &kp F5          &kp F6      &kp F7      &kp F8         &kp F9     &kp F10    &kp F11        &kp F12
+&kp K_REDO    &kp K_FIND  &kp N2      &kp N3       &kp N4          &kp N5      &kp C_MENU  &kp PAGE_DOWN  &kp ENTER  &kp INS    &kp PAGE_UP    &trans
+&kp K_SELECT  &kp K_STOP  &kp K_COPY  &kp LA(TAB)  &kp K_PASTE     &kp K_CUT   &kp LEFT    &kp DOWN       &kp UP     &kp RIGHT  &kp BACKSPACE  &kp DEL
+&kp K_UNDO    &to 0       &kp LC(A)   &kp TAB      &kp K_PREVIOUS  &kp K_NEXT  &trans      &trans         &trans     &trans     &to 2          &trans
+                                      &lt 3 LGUI   &trans          &kp SPACE   &kp RET     &trans         &kp RALT
             >;
         };
 
-        raise_layer {
-            display-name = "Raise";
+        symbolnum_layer {
+            display-name = "Symbol";
             bindings = <
 &kp TILDE  &kp N1    &kp N2  &kp N3      &kp N4    &kp N5     &kp N6     &kp N7     &kp N8           &kp N9    &kp N0    &kp GRAVE
 &kp TAB    &kp EXCL  &kp AT  &kp HASH    &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
@@ -95,6 +95,17 @@
 &trans          &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
 &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
                                 &trans  &trans  &trans  &trans  &trans     &trans
+            >;
+        };
+
+        layer_5 {
+            display-name = "tmp";
+            bindings = <
+&kp TILDE   &kp N1        &kp N2        &kp N3        &kp N4        &kp N5        &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp GRAVE
+&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5        &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
+&kp LSHFT   &trans        &trans        &trans        &trans        &trans        &trans    &trans    &trans    &trans     &trans  &trans
+                                        &lt 3 LGUI    &trans        &kp SPACE     &kp RET   &trans    &kp RALT
             >;
         };
     };
