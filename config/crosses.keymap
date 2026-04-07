@@ -90,11 +90,11 @@
         mouse_left_layer {
             display-name = "Mouse";
             bindings = <
-&studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
-&trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
-&trans          &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
-&trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
-                                &trans  &trans  &trans  &trans  &trans     &trans
+&studio_unlock  &trans        &trans        &trans        &trans        &trans        &trans  &trans     &trans     &trans     &trans  &trans
+&trans          &trans        &trans        &trans        &trans        &trans        &trans  &trans     &trans     &trans     &trans  &trans
+&trans          &trans        &trans        &trans        &trans        &trans        &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans     &trans     &trans     &trans  &trans
+                                            &trans        &trans        &trans        &trans  &trans     &trans
             >;
         };
 
