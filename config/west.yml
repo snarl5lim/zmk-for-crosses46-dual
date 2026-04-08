@@ -8,8 +8,8 @@ manifest:
       url-base: https://github.com/Good-Great-Grand-Wonderful
     - name: SolidAlloy
       url-base: https://github.com/SolidAlloy
-    - name: petejohanson
-      url-base: https://github.com/petejohanson
+    - name: badjeff
+      url-base: https://github.com/badjeff
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -20,7 +20,7 @@ manifest:
       revision: zephyr-4.1
       import: config/west.yml
     - name: zmk-pmw3610-driver
-      remote: petejohanson
+      remote: badjeff
       revision: main
   self:
     path: config
