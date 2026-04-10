@@ -15,7 +15,7 @@ manifest:
       remote: zmkfirmware
       # We must point this to an official ZMK OS commit, NOT a config commit.
       # This is a known-stable commit from ZMK main before recent Zephyr 3.5 updates.
-      revision: 88b27f83a1a7f743b212852974ddedb20959ba6b 
+      revision: cb786cd7d69f2a41f2968c2e5dd6a269d417286b 
       import: app/west.yml
 #    - name: zmk
 #      remote: zmkfirmware
