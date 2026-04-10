@@ -18,7 +18,7 @@ manifest:
       # 2. Tell West to use the new remote
       remote: heetuic
       # 3. Specify the exact repository name on that remote
-      repo-path: zmk-for-crosses
+      repo-path: zmk-for-crosses46-dual
       # 4. Your target commit hash goes here
       revision: bae0585c9f4dbb9764122629e8965bc29d27b142
       import: app/west.yml
