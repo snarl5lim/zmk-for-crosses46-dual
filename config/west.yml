@@ -1,35 +1,23 @@
 manifest:
-  defaults:
-    revision: main
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: Good-Great-Grand-Wonderful
-      url-base: https://github.com/Good-Great-Grand-Wonderful
     - name: SolidAlloy
       url-base: https://github.com/SolidAlloy
-    - name: badjeff
-      url-base: https://github.com/badjeff
+      
   projects:
     - name: zmk
       remote: zmkfirmware
-      # [CHANGED] Locked to the official v0.3 release tag. This is the 
-      # stable Zephyr 3.5 era, which fully supports ZMK_INPUT.
-      revision: v0.3
+      # Pulling the latest OS which contains native trackball drivers
+      revision: main
       import: app/west.yml
-#    - name: zmk
-#      remote: zmkfirmware
-#      revision: main
-#      import: app/west.yml
+      
     - name: gggw-zmk-keebs
       remote: SolidAlloy
-      # [CHANGED] Reverted from 'zephyr-4.1' back to 'main' so the 
-      # shield matches the v0.3 OS environment.
-      revision: main
-#      revision: zephyr-4.1
+      # Using the specific branch designed for the modern native driver
+      revision: zephyr-4.1
       import: config/west.yml
-    - name: zmk-pmw3610-driver
-      remote: badjeff
-      revision: main
+      
   self:
     path: config
+    
