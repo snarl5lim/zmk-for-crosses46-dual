@@ -13,9 +13,9 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      # We must point this to an official ZMK OS commit, NOT a config commit.
-      # This is a known-stable commit from ZMK main before recent Zephyr 3.5 updates.
-      revision: cb786cd7d69f2a41f2968c2e5dd6a269d417286b 
+      # [CHANGED] Locked to the official v0.3 release tag. This is the 
+      # stable Zephyr 3.5 era, which fully supports ZMK_INPUT.
+      revision: v0.3
       import: app/west.yml
 #    - name: zmk
 #      remote: zmkfirmware
@@ -23,7 +23,10 @@ manifest:
 #      import: app/west.yml
     - name: gggw-zmk-keebs
       remote: SolidAlloy
-      revision: zephyr-4.1
+      # [CHANGED] Reverted from 'zephyr-4.1' back to 'main' so the 
+      # shield matches the v0.3 OS environment.
+      revision: main
+#      revision: zephyr-4.1
       import: config/west.yml
     - name: zmk-pmw3610-driver
       remote: badjeff
